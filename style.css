@@ -1,0 +1,311 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .logo img {
+  width: 150px;
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #0056b3;
+}
+
+.login-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #003366;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f5f8fa;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 50%;
+}
+
+.hero-image img {
+  width: 400px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  margin-right: 10px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0056b3;
+  border-radius: 8px;
+}
+
+.hero-buttons .btn-primary:hover,
+.hero-buttons .btn-secondary:hover {
+  background-color: #003366;
+}
+
+/* Pricing Section */
+.pricing {
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #f5f8fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 5px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.price {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.price .old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.price .new-price {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.green {
+  background-color: #85d262;
+}
+
+.pink {
+  background-color: #ff709a;
+}
+
+.yellow {
+  background-color: #ffc107;
+}
+
+.blue {
+  background-color: #58a6ff;
+}
+
+   /* WhatsApp Floating Button */
+   .wa-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.wa-floating i {
+    font-size: 28px; /* Sesuaikan ukuran ikon */
+    color: #fff; /* Warna ikon putih */
+}
+
+.wa-floating:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 250px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .wa-floating {
+    width: 50px;
+    height: 50px;
+  }
+
+  .wa-floating img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.btn-1 {
+  background-color: #0056b3;
+  padding: 10px;
+  border-radius: 8px;
+  color: #f5f8fa;
+  text-align: center;
+}
+.btn-1:hover {
+  background-color: #003366;
+
+}
+.icon-large {
+  font-size: 30px;
+}
+.nav-categories {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.category-btn.active {
+  background-color: #4c46f5;
+  color: white;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 40%;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto%;
+}
+
+.gallery-item p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
